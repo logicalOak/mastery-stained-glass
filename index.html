@@ -1,0 +1,923 @@
+<!--================================================
+ * @author Dmitry Mozhnyy
+ * @license https://github.com/logicalOak
+ ================================================-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<!-- Code snippet to speed up Google Fonts rendering: googlefonts.3perf.com -->
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+	<link rel="preload"
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic" as="fetch"
+		crossorigin="anonymous">
+	<script type="text/javascript">!function (e, n, t) {
+			"use strict"; var o = "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic", r = "__3perf_googleFontsStylesheet"; function c(e) { (n.head || n.body).appendChild(e) }
+			function a() { var e = n.createElement("link"); e.href = o, e.rel = "stylesheet", c(e) }
+			function f(e) {
+				if (!n.getElementById(r)) { var t = n.createElement("style"); t.id = r, c(t) }
+				n.getElementById(r).innerHTML = e
+			}
+			e.FontFace && e.FontFace.prototype.hasOwnProperty("display") ? (t[r] && f(t[r]), fetch(o).then(function (e) { return e.text() }).then(function (e) { return e.replace(/@font-face {/g, "@font-face{font-display:swap;") }).then(function (e) { return t[r] = e }).then(f).catch(a)) : a()
+		}(window, document, localStorage);</script>
+	<!-- End of code snippet for Google Fonts -->
+
+	<link rel="stylesheet" href="css/index-min.css">
+
+	<title>Мастерская Витражей</title>
+</head>
+
+<body>
+
+	<!-- Section : header -->
+	<header class="header" id="header">
+		<!-- navigation -->
+		<nav class="nav">
+			<div class="nav__wrapper container">
+				<!-- logo -->
+				<a class="logo" aria-label="Мастерская Витражей">
+					<img src="img/header/logo.png" alt="Мастерская Витражей" class="logo__image">
+				</a>
+				<!-- mobile burger -->
+				<div class="hamburger hamburger--elastic-r">
+					<div class="hamburger-box">
+						<button class="hamburger-inner" aria-label="Mobile burger"></button>
+					</div>
+				</div>
+				<!-- Menu -->
+				<ul class="menu" aria-label="Меню сайта">
+					<!-- Menu item -->
+					<li class="menu__item"><a href="#advantages" class="menu__link">Приемущества</a></li>
+					<!-- Menu item -->
+					<li class="menu__item"><a href="#works" class="menu__link">Портфолио</a></li>
+					<!-- Menu item -->
+					<li class="menu__item"><a href="#process" class="menu__link">Схема работы</a></li>
+					<!-- Menu item -->
+					<li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+					<!-- Menu item -->
+					<li class="menu__item">
+						<a href="tel:+7(495)666-01-02" class="menu__phone" aria-label="Наш номер телефона">+7 (495)
+							666-01-02</a>
+						<a href="#" class="menu__btn modal-btn">Заказать звонок</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Section main: -->
+	<main class="main" id="main">
+		<!-- Section : promo-->
+		<section class="promo" id="promo">
+			<!-- inner -->
+			<div class="promo__inner container">
+				<h1 class="promo__head">
+					Изготовление всех видов
+					витражей любой сложности. <br>
+					Под ключ!
+				</h1>
+				<!-- list -->
+				<ul class="promo__list">
+					<!-- item -->
+					<li class="promo__item promo-item">
+						<div class="promo-item__image">
+							<img src="img/hero/hero-1.png" alt="Первое приемущество" class="promo-item__icon">
+						</div>
+						<h3 class="promo-item__head">Первое приемущество</h3>
+					</li>
+					<!-- item -->
+					<li class="promo__item promo-item">
+						<div class="promo-item__image">
+							<img src="img/hero/hero-2.png" alt="Второе приемущество" class="promo-item__icon">
+						</div>
+						<h3 class="promo-item__head">Второе приемущество</h3>
+					</li>
+					<!-- item -->
+					<li class="promo__item promo-item">
+						<div class="promo-item__image">
+							<img src="img/hero/hero-3.png" alt="Третье приемущество" class="promo-item__icon">
+						</div>
+						<h3 class="promo-item__head">Третье приемущество</h3>
+					</li>
+					<!-- item -->
+					<li class="promo__item promo-item">
+						<div class="promo-item__image">
+							<img src="img/hero/hero-4.png" alt="Четвертое приемущество" class="promo-item__icon">
+						</div>
+						<h3 class="promo-item__head">Четвертое приемущество</h3>
+					</li>
+				</ul>
+				<a href="#" class="btn modal-btn promo__btn">Узнать подробнее</a>
+			</div>
+		</section>
+		<!-- Section : types-->
+		<section class="types container" id="types">
+			<!-- head -->
+			<h2 class="shd types__shd"><span class="shd__box"></span>Делаем следующие виды витражей</h2>
+			<!-- list -->
+			<ul class="types__list">
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-1.jpg" alt="Круглые" class="types-item__image">
+						<h3 class="types-item__head">Круглые</h3>
+					</a>
+				</li>
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-2.jpg" alt="Угловые" class="types-item__image">
+						<h3 class="types-item__head">Угловые</h3>
+					</a>
+
+				</li>
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-3.jpg" alt="Контурный" class="types-item__image">
+						<h3 class="types-item__head">Контурный</h3>
+					</a>
+
+				</li>
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-4.jpg" alt="Фотопечать" class="types-item__image">
+						<h3 class="types-item__head">Фотопечать</h3>
+					</a>
+
+				</li>
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-5.jpg" alt="Пескаструй" class="types-item__image">
+						<h3 class="types-item__head">Пескаструй</h3>
+					</a>
+
+				</li>
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-6.jpg" alt="ЗерДверейкальное пано" class="types-item__image">
+						<h3 class="types-item__head">Зеркальное пано</h3>
+					</a>
+
+				</li>
+			</ul>
+			<h2 class="shd types__shd"><span class="shd__box"></span>Изготавливаем витражи для:</h2>
+			<!-- list -->
+			<ul class="types__list">
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-for-1.jpg" alt="Окон" class="types-item__image">
+						<h3 class="types-item__head">Окон</h3>
+					</a>
+
+				</li>
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-for-2.jpg" alt="Мебели" class="types-item__image">
+						<h3 class="types-item__head">Мебели</h3>
+					</a>
+
+				</li>
+				<!-- item -->
+				<li class="types__item types-item">
+					<a href="#" class="types-item__link">
+						<img src="img/type/type-for-3.jpg" alt="Дверей" class="types-item__image">
+						<h3 class="types-item__head">Дверей</h3>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<!-- Section : advantages-->
+		<section class="advantages" id="advantages">
+			<!-- inner -->
+			<div class="advantages__inner container">
+				<!-- head -->
+				<h2 class="shd advantages__shd"><span class="shd__box"></span>Наши приемущества:</h2>
+				<!-- list -->
+				<ul class="advantages__list">
+					<!-- item -->
+					<li class="advantages__item advantages-item">
+						<div class="advantages-item__image">
+							<img src="img/advantages/advantages-1.png" alt="Проекты любой сложности"
+								class="advantages-item__icon">
+						</div>
+
+						<div class="advantages-item__wrap">
+							<h3 class="advantages-item__head">— Проекты любой сложности</h3>
+							<p class="advantages-item__text">
+								Здесь в нескольких предложениях более детально расписываем суть приемущества не
+								несколько строчек, желательно с
+								акцентом на то, в чем выгода для человека.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="advantages__item advantages-item">
+						<div class="advantages-item__image">
+							<img src="img/advantages/advantages-2.png" alt="Наличие каталогов"
+								class="advantages-item__icon">
+						</div>
+
+						<div class="advantages-item__wrap">
+							<h3 class="advantages-item__head">— Наличие каталогов</h3>
+							<p class="advantages-item__text">
+								Здесь в нескольких предложениях более детально расписываем суть приемущества не
+								несколько строчек, желательно с
+								акцентом на то, в чем выгода для человека.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="advantages__item advantages-item">
+
+						<div class="advantages-item__image"> <img src="img/advantages/advantages-3.png"
+								alt="Полный цикл работ (под ключ)" class="advantages-item__icon"></div>
+						<div class="advantages-item__wrap">
+							<h3 class="advantages-item__head">— Полный цикл работ (под ключ)</h3>
+							<p class="advantages-item__text">
+								Здесь в нескольких предложениях более детально расписываем суть приемущества не
+								несколько строчек, желательно с
+								акцентом на то, в чем выгода для человека.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="advantages__item advantages-item">
+
+						<div class="advantages-item__image"><img src="img/advantages/advantages-4.png"
+								alt="Собственное производство" class="advantages-item__icon"></div>
+						<div class="advantages-item__wrap">
+							<h3 class="advantages-item__head">— Собственное производство</h3>
+							<p class="advantages-item__text">
+								Здесь в нескольких предложениях более детально расписываем суть приемущества не
+								несколько строчек, желательно с
+								акцентом на то, в чем выгода для человека.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="advantages__item advantages-item">
+
+						<div class="advantages-item__image"> <img src="img/advantages/advantages-5.png"
+								alt="Количество реализованных проектов" class="advantages-item__icon"></div>
+						<div class="advantages-item__wrap">
+							<h3 class="advantages-item__head">— Количество реализованных проектов</h3>
+							<p class="advantages-item__text">
+								Здесь в нескольких предложениях более детально расписываем суть приемущества не
+								несколько строчек, желательно с
+								акцентом на то, в чем выгода для человека.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="advantages__item advantages-item">
+
+						<div class="advantages-item__image"> <img src="img/advantages/advantages-6.png"
+								alt="Доступные цены, высокое качество" class="advantages-item__icon"></div>
+						<div class="advantages-item__wrap">
+							<h3 class="advantages-item__head">— Доступные цены, высокое качество</h3>
+							<p class="advantages-item__text">
+								Здесь в нескольких предложениях более детально расписываем суть приемущества не
+								несколько строчек, желательно с
+								акцентом на то, в чем выгода для человека.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="advantages__item advantages-item">
+
+						<div class="advantages-item__image"><img src="img/advantages/advantages-7.png"
+								alt="Опыт работы " class="advantages-item__icon"></div>
+						<div class="advantages-item__wrap">
+							<h3 class="advantages-item__head">— Опыт работы </h3>
+							<p class="advantages-item__text">
+								Здесь в нескольких предложениях более детально расписываем суть приемущества не
+								несколько строчек, желательно с
+								акцентом на то, в чем выгода для человека.
+							</p>
+						</div>
+					</li>
+					<!-- item -->
+					<li class="advantages__item advantages-item">
+
+						<div class="advantages-item__image"><img src="img/advantages/advantages-8.png"
+								alt="Быстрые сроки" class="advantages-item__icon"></div>
+						<div class="advantages-item__wrap">
+							<h3 class="advantages-item__head">— Быстрые сроки</h3>
+							<p class="advantages-item__text">
+								Здесь в нескольких предложениях более детально расписываем суть приемущества не
+								несколько строчек, желательно с
+								акцентом на то, в чем выгода для человека.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Section : works-->
+		<section class="works container" id="works">
+			<!-- head -->
+			<h2 class="shd works__shd"><span class="shd__box"></span>Портфолио:</h2>
+			<p class="works__text">
+				Ниже вы можете ознакомиться с примерами наших работ для разных типов помещений.
+				Это лишь небольшая часть работ. С большим количеством примеров вы можете
+				познакомиться по <a href="#" class="blue">ссылке</a>
+			</p>
+			<div class="tab works__tab">
+				<div class="tab__controls">
+					<button class="tab__button" data-filter=".ceiling" aria-label="Показать Потолки">Потолки</button>
+					<button class="tab__button" data-filter=".doors" aria-label="Показать Двери">Двери</button>
+					<button class="tab__button" data-filter=".window" aria-label="Показать Окна">Окна</button>
+					<button class="tab__button" data-filter=".kitchen" aria-label="Показать Кухонные фартуки">Кухонные
+						фартуки
+						(скинали)</button>
+					<button class="tab__button" data-filter=".scinale"
+						aria-label="Показать Шкафы-купе">Шкафы-купе</button>
+				</div>
+				<!-- content -->
+				<ul class="tab__contents">
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_1.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_1.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_2.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_2.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_3.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_3.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_4.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_4.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_5.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_5.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_6.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_6.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_7.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_7.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_8.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_8.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_9.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_9.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_10.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_10.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_11.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_11.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item ceiling">
+						<a href="img/works/celling/ceiling_12.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/celling/ceiling_12.jpg" alt="Потолки" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- DOORS -->
+					<!-- item -->
+					<li class="tab__item mix tab-item doors">
+						<a href="img/works/doors/door_1.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/doors/door_1.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item doors">
+						<a href="img/works/doors/door_2.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/doors/door_2.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item doors">
+						<a href="img/works/doors/door_3.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/doors/door_3.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item doors">
+						<a href="img/works/doors/door_4.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/doors/door_4.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item doors">
+						<a href="img/works/doors/door_5.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/doors/door_5.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- WINDOW -->
+					<!-- item -->
+					<li class="tab__item mix tab-item window">
+						<a href="img/works/window/window_1.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/window/window_1.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item window">
+						<a href="img/works/window/window_2.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/window/window_2.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item window">
+						<a href="img/works/window/window_3.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/window/window_3.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- KITCHEN -->
+					<!-- item -->
+					<li class="tab__item mix tab-item kitchen">
+						<a href="img/works/kitchen/kitchen_1.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen/kitchen_1.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item kitchen">
+						<a href="img/works/kitchen/kitchen_2.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen/kitchen_2.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item kitchen">
+						<a href="img/works/kitchen/kitchen_3.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen/kitchen_3.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item kitchen">
+						<a href="img/works/kitchen/kitchen_4.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen/kitchen_4.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item kitchen">
+						<a href="img/works/kitchen/kitchen_5.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen/kitchen_5.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item kitchen">
+						<a href="img/works/kitchen/kitchen_6.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen/kitchen_6.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- SCINALE -->
+					<!-- item -->
+					<li class="tab__item mix tab-item scinale">
+						<a href="img/works/kitchen-skinalle/cupboard_1.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen-skinalle/cupboard_1.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item scinale">
+						<a href="img/works/kitchen-skinalle/cupboard_2.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen-skinalle/cupboard_2.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item scinale">
+						<a href="img/works/kitchen-skinalle/cupboard_3.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen-skinalle/cupboard_3.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item scinale">
+						<a href="img/works/kitchen-skinalle/cupboard_4.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen-skinalle/cupboard_4.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item scinale">
+						<a href="img/works/kitchen-skinalle/cupboard_5.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen-skinalle/cupboard_5.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item scinale">
+						<a href="img/works/kitchen-skinalle/cupboard_6.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen-skinalle/cupboard_6.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<!-- item -->
+					<li class="tab__item mix tab-item scinale">
+						<a href="img/works/kitchen-skinalle/cupboard_7.jpg" fslightbox-gallery="gallery1">
+							<img src="img/works/kitchen-skinalle/cupboard_7.jpg" alt="Двери" class="tab-item__image">
+							<div class="tab-item__overlay">
+								<img src="img/works/zoom-icon.png" alt="Zoom" class="tab-item__lupa">
+							</div>
+						</a>
+					</li>
+					<li class="gap"></li>
+					<li class="gap"></li>
+				</ul>
+			</div>
+			<a href="#" class="btn modal-btn works__btn">Отправить заявку</a>
+			<p class="works__info">Чтобы отправить заявку на просчет, уточнить имеющиеся вопросы
+				или получить консультацию менеджера, просто заполнитк
+				и отправитьте заявку, кликнув на кнопку...</p>
+		</section>
+		<!-- Section : process-->
+		<section class="process container" id="process">
+			<!-- head -->
+			<h2 class="shd process__shd"><span class="shd__box"></span>Как мы работаем:</h2>
+			<!-- list -->
+			<ul class="process__list">
+				<!-- item -->
+				<li class="process__item process-item">
+					<div class="process-item__header">
+						<img src="img/process/process-1.png" alt="Запрос" class="process-item__icon">
+					</div>
+					<h3 class="process-item__head">Запрос</h3>
+					<p class="process-item__text">
+						Более подробное
+						пояснение сути этапа,
+						в нескольких предложениях.
+						Описание того, что на нем
+						будет происходить
+					</p>
+				</li>
+				<!-- item -->
+				<li class="process__item process-item">
+					<div class="process-item__header">
+						<img src="img/process/process-2.png" alt="Согласование и замер" class="process-item__icon">
+					</div>
+					<h3 class="process-item__head">Согласование и замер</h3>
+					<p class="process-item__text">
+						Более подробное
+						пояснение сути этапа,
+						в нескольких предложениях.
+						Описание того, что на нем
+						будет происходить
+					</p>
+				</li>
+				<!-- item -->
+				<li class="process__item process-item">
+					<div class="process-item__header">
+						<img src="img/process/process-3.png" alt="Подготовка макета" class="process-item__icon">
+					</div>
+					<h3 class="process-item__head">Подготовка макета</h3>
+					<p class="process-item__text">
+						Более подробное
+						пояснение сути этапа,
+						в нескольких предложениях.
+						Описание того, что на нем
+						будет происходить
+					</p>
+				</li>
+				<!-- item -->
+				<li class="process__item process-item">
+					<div class="process-item__header">
+						<img src="img/process/process-4.png" alt="Производство" class="process-item__icon">
+					</div>
+					<h3 class="process-item__head">Производство</h3>
+					<p class="process-item__text">
+						Более подробное
+						пояснение сути этапа,
+						в нескольких предложениях.
+						Описание того, что на нем
+						будет происходить
+					</p>
+				</li>
+				<!-- item -->
+				<li class="process__item process-item">
+					<div class="process-item__header">
+						<img src="img/process/process-5.png" alt="Доставка и монтаж" class="process-item__icon">
+					</div>
+					<h3 class="process-item__head">Доставка и монтаж</h3>
+					<p class="process-item__text">
+						Более подробное
+						пояснение сути этапа,
+						в нескольких предложениях.
+						Описание того, что на нем
+						будет происходить
+					</p>
+				</li>
+			</ul>
+		</section>
+		<!-- Section : about-->
+		<section class="about" id="about">
+			<!-- head -->
+			<h2 class="shd about__shd"><span class="shd__box"></span> О компании:</h2>
+			<!-- inner -->
+			<div class="about__inner container">
+				<img src="img/about/about.jpg" alt="О компании" class="about__image">
+				<p class="about__text">
+					<span class="about__text-item">
+						Компания "В.В.К." начала свою деятельность в 2005 году. За годы активной работы наши мастера
+						создали сотни
+						уникальных изделий, которые объединили в себе красоту, функциональность и индивидуальность.
+						Витражи от нашей
+						студии - это современные технологии, уникальные материалы, привлекательный внешний вид,
+						прочность и надежность
+						проверенные временем.
+					</span>
+					<span class="about__text-item">
+						Основной деятельностью витражной мастерской "В.В.К." является изготовление эксклюзивных витражей
+						для оформления
+						интерьера. Наши витражи отлично впишутся в любой интерьер, включая классику, модерн или модный
+						японский стиль. Мы
+						предлагаем своим клиентам изделия следующих типов:
+					</span>
+					<span class="about__text-item">
+						В числе наших клиентов есть как крупные мебельные компании, дизайнеры и архитекторы,
+						занимающиеся оформлением
+						домов, квартир или офисов, так и частные лица. Качество и высокая художественная ценность
+						витражей, доступная
+						стоимость и строгое соблюдение сроков выполнения заказов — это те характеристики, которые
+						привлекают заказчиков и
+						часто переводят их в статус постоянных. Удобно то, что мы осуществляем полный цикл производства
+						витража, начиная
+						от создания набросков и макетов и заканчивая производством изделия, его доставкой и монтажом.
+					</span>
+				</p>
+			</div>
+		</section>
+		<!-- Section : contact-->
+		<section class="contact container" id="contact">
+			<!-- head -->
+			<h2 class="shd contact__shd"><span class="shd__box"></span>Контакты</h2>
+			<p class="contact__lead">
+				Если вы хотите сделать заказ, отправить заявку на просчет, уточнить имеющиеся вопросы
+				или просто получить консультацию менеджера, можете связаться с нами любым удобным
+				для вас способом
+			</p>
+			<!-- list -->
+			<ul class="contact__list">
+				<!-- item -->
+				<li class="contact__item">
+					Позвонить по телефону +7 (945) 666-01-02 или написать на почту <a
+						href="mailto:7780805@gmail.com">7780805@gmail.com</a>
+				</li>
+				<!-- item -->
+				<li class="contact__item">
+					Заказать обратны звонок по <a href="#" class="blue">ссылке</a>
+				</li>
+				<!-- item -->
+				<li class="contact__item">
+					Приехать к нам в офис. Мы находимся по адресу: Московская область, г. Котельники, мкр-он Белая Дача,
+					промзона
+					Технопром, Коммерческий проезд, строение Е, Офис В.В.К. <a href="#" class="blue">Посмотреть на
+						карте</a>
+				</li>
+				<!-- item -->
+				<li class="contact__item">Заполнить и отправить форму ниже</li>
+			</ul>
+		</section>
+		<!-- Section : feedback-->
+		<section class="feedback" id="feedback">
+			<!-- inner -->
+			<div class="feedback__inner container">
+				<form action="#" class="form feedback__form">
+					<!-- label -->
+					<label class="form__label" aria-label="Введите ваше имя">
+						<span class="form__label-name">Имя</span>
+						<span class="form__req">*</span>
+						<input type="text" class="form__input" required placeholder="Введите ваше имя">
+					</label>
+					<!-- label -->
+					<label class="form__label" aria-label="Введите ваш телефон">
+						<span class="form__label-name">Телефон</span>
+						<span class="form__req">*</span>
+						<input type="tel" class="form__input" required placeholder="+7 (918) 123-45-67">
+					</label>
+					<!-- label -->
+					<label class="form__label" aria-label="Введите ваш E-mail">
+						<span class="form__label-name">E-mail</span>
+						<span class="form__req">*</span>
+						<input type="email" class="form__input" required placeholder="Введите ваш email">
+					</label>
+					<!-- label -->
+					<label class="form__label" aria-label="Введите ваш комментарий">
+						<span class="form__label-name">Сообщение</span>
+						<input type="text" class="form__input" placeholder="Введите комментарий">
+					</label>
+					<!-- group -->
+					<div class="form__group">
+						<!-- label -->
+						<label class="form__label" aria-label="Прикрепить файл">
+							<input type="file" class="visually-hidden">
+							<img src="img/contact/form-icon-1.png" alt="Прикрепить файл" class="form__icon">
+							Прикрепить файл
+						</label>
+						<button type="submit" class="btn form__btn">Отправить заявку</button>
+					</div>
+					<!-- label -->
+					<label class="form__label form__label_policy"
+						aria-label="Ознакомлен с политикой кофиденциальтности">
+						Ознакомлен с политикой кофиденциальтности
+						<input type="checkbox" class="visually-hidden">
+						<span class="checkbox"></span>
+					</label>
+					<span class="form__more">* Поле является обязательным для заполнения</span>
+				</form>
+			</div>
+			<div class="map feedback__map">
+				<iframe class="feedback__iframe"
+					src="https://yandex.ru/map-widget/v1/?um=constructor%3A48f1599c1455a0e6ebf8a0d8436e59d94c1ccdafda5209162a20d3833fef4fc5&amp;source=constructor"></iframe>
+			</div>
+		</section>
+	</main>
+	<!-- Section : footer:-->
+	<footer class="footer" id="footer">
+		<!-- inner -->
+		<div class="footer__inner container">
+			<a class="logo footer__logo" aria-label="Мастерская Витражей">
+				<img src="img/header/logo.png" alt="Мастерская Витражей" class="logo__image">
+			</a>
+			<p class="footer__copy">© VVK, 2020</p>
+			<a href="#" class="footer__policy" aria-label="Политика конфиденциальности">Политика конфиденциальности</a>
+			<a href="tel:+7(495)666-01-02" class="footer__phone" aria-label="Наш номер телефона">+7 (495) 666-01-02</a>
+		</div>
+	</footer>
+
+
+	<div class="overlay">
+		<form action="#" class="form modal-form">
+			<!-- label -->
+			<label class="form__label" aria-label="Введите ваше имя">
+				<span class="form__label-name">Имя</span>
+				<span class="form__req">*</span>
+				<input type="text" class="form__input" required placeholder="Введите ваше имя">
+			</label>
+			<!-- label -->
+			<label class="form__label" aria-label="Введите ваш телефон">
+				<span class="form__label-name">Телефон</span>
+				<span class="form__req">*</span>
+				<input type="tel" class="form__input" required placeholder="+7 (918) 123-45-67">
+			</label>
+			<!-- label -->
+			<label class="form__label" aria-label="Введите ваш E-mail">
+				<span class="form__label-name">E-mail</span>
+				<span class="form__req">*</span>
+				<input type="email" class="form__input" required placeholder="Введите ваш email">
+			</label>
+			<!-- label -->
+			<label class="form__label" aria-label="Введите ваш комментарий">
+				<span class="form__label-name">Сообщение</span>
+				<input type="text" class="form__input" placeholder="Введите комментарий">
+			</label>
+			<!-- group -->
+			<div class="form__group">
+				<!-- label -->
+				<label class="form__label" aria-label="Прикрепить файл">
+					<input type="file" class="visually-hidden">
+					<img src="img/contact/form-icon-1.png" alt="Прикрепить файл" class="form__icon">
+					Прикрепить файл
+				</label>
+				<button type="submit" class="btn form__btn">Отправить заявку</button>
+			</div>
+			<!-- label -->
+			<label class="form__label form__label_policy" aria-label="Ознакомлен с политикой кофиденциальтности">
+				Ознакомлен с политикой кофиденциальтности
+				<input type="checkbox" class="visually-hidden">
+				<span class="checkbox"></span>
+			</label>
+			<span class="form__more">* Поле является обязательным для заполнения</span>
+		</form>
+	</div>
+
+
+	<script src="js/app-min.js"></script>
+</body>
+
+</html>
